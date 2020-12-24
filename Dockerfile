@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY ./*.json ./
 COPY ./src ./src
-COPY ./public ./public
 
 RUN npm install
 
