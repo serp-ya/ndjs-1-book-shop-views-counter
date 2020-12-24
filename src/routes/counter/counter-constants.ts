@@ -1,0 +1,1 @@
+export const COUNTER_ROUTE_NAME = 'counter';
