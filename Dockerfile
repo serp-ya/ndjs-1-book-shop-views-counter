@@ -3,8 +3,9 @@ FROM node:14-alpine
 WORKDIR /app
 
 COPY ./*.json ./
+RUN npm install
+
 COPY ./src ./src
 
-RUN npm install
 
 CMD ["npm", "run", "start:watch"]
