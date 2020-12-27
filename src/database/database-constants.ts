@@ -1,5 +1,12 @@
-import path from 'path';
+import { MONGO_DB_ATLAS_PSW } from '@/env';
 
-const DB_NAME = 'db.json';
-export const DB_PATH = path.join(__dirname, DB_NAME);
-export const COUNTER_DEFAULT_VALUE = 0;
+const DB_NAME = 'books';
+
+export const DB_URL = (
+    `mongodb+srv://book-man:${MONGO_DB_ATLAS_PSW}@cluster0.ibep9.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`
+);
+
+export const DB_CONNECTION_CONFIG = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+};

@@ -1,1 +1,1 @@
-export { getCounter, incrementCounter } from './database';
+export { dbConnect } from './database';
