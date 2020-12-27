@@ -1,3 +1,3 @@
-export enum CounterFields {
+export enum ECounterFields {
     Counter = 'counter',
 };
